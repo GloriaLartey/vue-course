@@ -12,7 +12,7 @@ const lastName = ref('Lartey')
 const fullName = computed(() => firstName.value + ' ' + lastName.value)
 
 const counter = ref(0)
-const squaredCounter = computed(() => counter, value ** 2)
+const squaredCounter = computed(() => counter, counter.value ** 2)
 const incrementCounter = () => {
   counter.value++
 }

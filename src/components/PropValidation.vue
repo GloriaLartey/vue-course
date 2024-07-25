@@ -9,7 +9,7 @@ const props = defineProps({
   fullName: {
     type: String,
     required: true,
-    default: Anonymus
+    default: 'Anonymous'
   },
   age: Number
 })

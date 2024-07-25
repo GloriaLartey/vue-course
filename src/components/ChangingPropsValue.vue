@@ -1,6 +1,6 @@
 <script setup>
 const myFavouriteNumberProp = defineProps(['myFavouriteNumber'])
-myFavouriteNumberProp.myFavouriteNumber = 10
+//myFavouriteNumberProp.myFavouriteNumber = 10
 </script>
 
 <template>

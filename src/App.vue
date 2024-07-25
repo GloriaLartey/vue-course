@@ -17,19 +17,22 @@ import DynamicPropsComponent from './components/DynamicPropsComponent.vue'
 import ChangingPropsValue from './components/ChangingPropsValue.vue'
 import PropValidation from './components/PropValidation.vue'
 import ComplexProps from './components/ComplexProps.vue'
+import CustomValidator from './components/CustomValidator.vue'
+import ComponentEvent from './components/ComponentEvent.vue'
 
 const firstName = ref('HuXn')
 const lastName = ref('WebDEv')
 const myFavouriteNumber = ref(5)
+let count = ref(0)
 </script>
 <template>
-  <!-- <MyComponent /> -->
-  <!-- <GlobalStyle /> -->
-  <!-- <LocalStyle /> -->
-  <!-- <CombinedStyle /> -->
-  <!-- <ModuleStyle /> -->
-  <!-- <MyEvent /> -->
-  <!-- <MyReactiveComponent /> -->
+  <MyComponent />
+  <GlobalStyle />
+  <LocalStyle />
+  <CombinedStyle />
+  <ModuleStyle />
+  <MyEvent />
+  <MyReactiveComponent />
   <MyRefComponent />
   <ConditionalRendering />
   <ComputedProperties />
@@ -37,10 +40,15 @@ const myFavouriteNumber = ref(5)
   <StaticPropsComponent name="Ria" />
   <DynamicPropsComponent :firstName="firstName" :lastName="lastName" />
   <ChangingPropsValue :myFavouriteNumber="myFavouriteNumber" />
-  <PropValidation :fullName="Ria" :age="22" />
+  <PropValidation fullName="Ria" :age="22" />
   <ComplexProps
     :friends="['alex', 'john', 'jordan', 'Ria']"
     :userInfo="{ name: 'alex', age: 22, location: ['Earth', 'IDK'] }"
   />
+  <hr />
+  <CustomValidator name="Ria" :age="20" password="impossiblePassword" />
+
+  <h1>Count: {{ count }}</h1>
+  <ComponentEvent @incrementCounter="count++" />
 </template>
 <style scoped></style>
