@@ -32,6 +32,15 @@ import BasicComponent from './components/BasicComponent.vue'
 import ReactiveObject from './components/ReactiveObject.vue'
 import MultipleSources from './components/MultipleSources.vue'
 import BasicRef from './components/BasicRef.vue'
+import FunctionRef from './components/FunctionRef.vue'
+import RefComponents from './components/RefComponents.vue'
+import ToggleFriends from './components/ToggleFriends.vue'
+import CounterComponent from './components/CounterComponent.vue'
+import MineComponent from './components/MineComponent.vue'
+import MainComponent from './components/MainComponent.vue'
+import GettingDataWithFetch from './components/GettingDataWithFetch.vue'
+import GettingDataWithAxios from './components/GettingDataWithAxios.vue'
+import TodoList from './components/TodoList.vue'
 
 const firstName = ref('HuXn')
 const lastName = ref('WebDEv')
@@ -160,12 +169,37 @@ const showHide = ref(true)
   /> -->
 
   <SchoolComponent />
+  <hr />
   <PracticeComponent />
+  <hr />
   <LifeCycleComponent v-if="showHide" />
+  <hr />
   <button @click="showHide = !showHide">Show / Hide</button>
+  <hr />
   <BasicComponent />
+  <hr />
   <ReactiveObject />
+  <hr />
   <MultipleSources />
+  <hr />
   <BasicRef />
+  <hr />
+  <FunctionRef />
+  <hr />
+  <RefComponents />
+  <hr />
+  <ToggleFriends />
+  <hr />
+  <CounterComponent />
+  <hr />
+  <MineComponent />
+  <hr />
+  <MainComponent />
+  <hr />
+  <GettingDataWithFetch />
+  <hr />
+  <GettingDataWithAxios />
+  <hr />
+  <TodoList />
 </template>
 <style scoped></style>

@@ -6,7 +6,6 @@ import {
   onBeforeUpdate,
   onUpdated,
   onBeforeUnmount,
-  OnUnmounted,
   onUnmounted
 } from 'vue'
 
